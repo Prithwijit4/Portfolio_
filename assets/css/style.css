@@ -1,0 +1,112 @@
+@font-face {
+    font-family: syne;
+    src: url(../fonts/Syne-Bold.ttf);
+}
+@font-face {
+  font-family: geistb;
+  src: url(../fonts/Geist-Bold.ttf);
+}
+@font-face {
+  font-family: geistre;
+  src: url(../fonts/Geist-Regular.ttf);
+}
+@font-face {
+  font-family: geistmid;
+  src: url(../fonts/Geist-Medium.ttf);
+}
+:root{
+    --wht: #fff;
+    --blck: #000;
+    --bg: #F7EEB5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: syne;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg);
+  color: var(--blck);
+  cursor: none;
+}
+
+#dots{
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.cursor{
+    width: 35px;
+    height: 35px;
+    border: 1.5px solid #000;
+    border-radius: 50%;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    pointer-events: none;
+    z-index: 99999;
+
+    transform: translate(-50%, -50%);
+
+    transition: transform .25s cubic-bezier(.22,1,.36,1);
+}
+
+
+
+
+
+ul li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--blck);
+}
+
+header{
+  padding: 0 2%;
+}
+
+nav{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.flash-icon{
+  font-size: 3rem;
+}
+
+.upper-text{
+  width: 20%;
+  height: 20%;
+  margin-top: 9rem;
+}
+.fe-text{
+  font-weight: 900;
+  font-family: geistre;
+}
+.lw-text{
+  font-weight: 400;
+  font-family: geistre;
+}
